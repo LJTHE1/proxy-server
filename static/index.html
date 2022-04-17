@@ -59,38 +59,38 @@
         <div class="wrapper2">
             <h3 style="color:white;"><u>Disclaimer!</u></h3>
             <p style="color:white;">Please use this tool responsibly. By hitting enter you are agreeing that I am not responsible for any "trouble" you may get into within your class. </p>
-            <p style="color:white;">I know this is slow! The hyperlinks are still being troubling so dont mind them.</p>
             <h3 style="color:white;"><u>Known Issues</u></h3>
-            <p style="color:white;">- Hyperlinks at the bottom don't work if you haven't already searched for something.</p>
-            <p style="color:white;">- (Testing to see if true) Hyperlinks are slower to load then just searching for it.</p>
+            <p style="color:white;">- None!</p>
         </div>
         <div class="wrapper">
             <h3 style="color:white;"><u>Join The offical Server!</u>
             </h3>
-            <iframe src="https://pro.fcboe.cf/service/hvtrs8%2F-dksaopd%2Ccmm-wkdeev%3Fkd%3F9764011%3A574451928%3A%26vhgmg%3Dfapk" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <iframe src="/service/hvtrs8%2F-dksaopd%2Ccmm-wkdeev%3Fkd%3F9764011%3A574451928%3A%26vhgmg%3Dfapk" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
 
     </center>
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="index.js"></script>
-    <script type='text/javascript'>
+    <script>
         (function() {
             if (window.localStorage) {
                 if (!localStorage.getItem('firstLoad')) {
                     const form = document.querySelector('form');
                     const input = document.querySelector('input');
+                    alert("Welcome, since this is your first time please give me a minute to load the assets!")
 
 
-                    event.preventDefault();
                     window.navigator.serviceWorker.register('./sw.js', {
                         scope: __uv$config.prefix
+
                     }).then(() => {
                         let url = "https://google.com"
                         if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
                         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
 
+                        alert("the site is working")
                     });
 
                     function isUrl(val = '') {
@@ -99,26 +99,21 @@
                     };
 
                     localStorage['firstLoad'] = true;
-                    window.location = window.location.href + "?r";
-
-
+                    window.location.reload();
                 } else if (!localStorage.getItem('alerted')) {
                     alert("Website loaded! Please reload the page in order to use the proxy!")
-                    localStorage['alert'] = true;
-
-
-                } else
-            }
+                    localStorage['alerted'] = true;
+                };
+            };
         })();
     </script>
 </body>
 <footer>
-    <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
     <p style="color:white;"><u> Quicklinks ⭢ </u></p>
-    <a title=" This tool is being hosted by KozmikNano" href="https://pro.fcboe.cf/service/hvtrs8%2F-gktju%60.aoo%2Fioxmkklalo">Hosted by KozmikNano</a>
-    <a title="Discord Quick Link" href="https://pro.fcboe.cf/service/hvtrs8%2F-dksaopd%2Ccmm-lmgkn">Discord</a>
-    <a title="Google Quick Link" href="https://pro.fcboe.cf/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F">Google</a>
-    <a title="Youtube Quick Link" href="https://pro.fcboe.cf/service/hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-">Youtube</a>
+    <a title=" This tool is being hosted by KozmikNano" href="/service/hvtrs8%2F-gktju%60.aoo%2Fioxmkklalo">Hosted by KozmikNano</a>
+    <a title="Discord Quick Link" href="/service/hvtrs8%2F-dksaopd%2Ccmm-lmgkn">Discord</a>
+    <a title="Google Quick Link" href="/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F">Google</a>
+    <a title="Youtube Quick Link" href="/service/hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-">Youtube</a>
 </footer>
 
 
