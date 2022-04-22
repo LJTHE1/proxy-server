@@ -19,7 +19,7 @@
 body {
     font-family: 'Alatsi', sans-serif;
     margin: auto;
-    overflow: scroll;
+    overflow: hidden;
     background: black;
 }
 
