@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="icon" href="favicon.ico">
+<title>School Tools</title>
 
 <style>
     h1 {
@@ -22,92 +23,97 @@
 
 </head>
 
-<body onload="start()">
-    <center>
-        <script>
-            function doFunction() {
-                const form = document.querySelector('form');
-                const input = document.querySelector('input');
+<body>
+    <div class="container">
 
-                alert("hello");
-
-                event.preventDefault();
-                window.navigator.serviceWorker.register('./sw.js', {
-                    scope: __uv$config.prefix
-                }).then(() => {
-                    let url = "https://google.com"
-                    if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
-                    else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
-
-
-                    window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-                });
-
-                function isUrl(val = '') {
-                    if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
-                    return false;
-                };
-            }
-        </script>
-
-
-        <div title="Image Viewer for school projects!" class="desc">
-            <h1 style="color:white;">Image Viewer for school projects! </h1>
-        </div>
-        <form>
-            <input placeholder="Search for your projects">
-        </form>
-        <div class="wrapper2">
-            <h3 style="color:white;"><u>Disclaimer!</u></h3>
-            <p style="color:white;">Please use this tool responsibly. By hitting enter you are agreeing that I am not responsible for any "trouble" you may get into within your class. </p>
-            <h3 style="color:white;"><u>New fearures coming!</u></h3>
-            <p style="color:white;">- GAMES</p>
-        </div>
-        <div class="wrapper">
-            <h3 style="color:white;"><u>Join The offical Server!</u>
-            </h3>
-            <iframe src="/service/hvtrs8%2F-dksaopd%2Ccmm-wkdeev%3Fkd%3F9764011%3A574451928%3A%26vhgmg%3Dfapk" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-
-    </center>
-    <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
-    <script src="index.js"></script>
-    <script>
-        (function() {
-            if (window.localStorage) {
-                if (!localStorage.getItem('firstLoad')) {
+        <center>
+            <script>
+                function doFunction() {
                     const form = document.querySelector('form');
                     const input = document.querySelector('input');
-                    alert("Welcome, since this is your first time please give me a minute to load the assets!")
 
+                    alert("hello");
 
+                    event.preventDefault();
                     window.navigator.serviceWorker.register('./sw.js', {
                         scope: __uv$config.prefix
-
                     }).then(() => {
                         let url = "https://google.com"
                         if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
                         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
 
-                        alert("the site is working")
+                        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
                     });
 
                     function isUrl(val = '') {
                         if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
                         return false;
                     };
+                }
+            </script>
 
-                    localStorage['firstLoad'] = true;
-                    window.location.reload();
-                } else if (!localStorage.getItem('alerted')) {
-                    alert("Website loaded! Please reload the page in order to use the proxy!")
-                    localStorage['alerted'] = true;
+
+            <div title="Image Viewer for school projects!" class="desc">
+                <h1 style="color:white;">Image Viewer for school projects! </h1>
+            </div>
+            <form>
+                <input placeholder="Search for your projects">
+            </form>
+            <div class="wrapper2">
+                <h3 style="color:white;"><u>Disclaimer!</u></h3>
+                <p style="color:white;">Please use this tool responsibly. By hitting enter you are agreeing that I am not responsible for any "trouble" you may get into within your class. </p>
+                <h3 style="color:white;"><u>New fearures coming!</u></h3>
+                <p style="color:white;">- GAMES</p>
+            </div>
+            <div class="wrapper">
+                <h3 style="color:white;"><u>Join The offical Server!</u>
+                </h3>
+                <iframe src="/service/hvtrs8%2F-dksaopd%2Ccmm-wkdeev%3Fkd%3F9764011%3A574451928%3A%26vhgmg%3Dfapk" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+
+        </center>
+        <script src="uv/uv.bundle.js"></script>
+        <script src="uv/uv.config.js"></script>
+        <script src="index.js"></script>
+        <script>
+            (function() {
+
+
+                if (window.localStorage) {
+                    if (!localStorage.getItem('firstLoad')) {
+                        const form = document.querySelector('form');
+                        const input = document.querySelector('input');
+                        alert("Welcome, since this is your first time please give me a minute to load the assets!")
+
+
+                        window.navigator.serviceWorker.register('./sw.js', {
+                            scope: __uv$config.prefix
+
+                        }).then(() => {
+                            let url = "https://google.com"
+                            if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+                            else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+
+
+                            alert("the site is working")
+                        });
+
+                        function isUrl(val = '') {
+                            if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+                            return false;
+                        };
+
+                        localStorage['firstLoad'] = true;
+                        window.location.reload();
+                    } else if (!localStorage.getItem('alerted')) {
+                        alert("Website loaded! Please reload the page in order to use the proxy!")
+                        localStorage['alerted'] = true;
+                    };
                 };
-            };
-        })();
-    </script>
+            })();
+        </script>
+    </div>
 </body>
 <footer>
     <p style="color:white;"><u> Quicklinks ⭢ </u></p>
