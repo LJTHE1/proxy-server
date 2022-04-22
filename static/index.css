@@ -18,8 +18,9 @@
 
 body {
     font-family: 'Alatsi', sans-serif;
+    transform: scale(80%);
     margin: auto;
-    overflow: hidden;
+    overflow: scroll;
     background: black;
 }
 
