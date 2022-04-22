@@ -20,20 +20,11 @@
 
 
 body {
-    background: rgb(34, 193, 195);
-    background: -moz-linear-gradient(229deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background: -webkit-linear-gradient(229deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background: linear-gradient(229deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3", endColorstr="#fdbb2d", GradientType=1);
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    min-width: 600px;
-    max-width: 2000px;
-    animation: fadeInAnimation ease-in-out 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+    background: rgb(238, 174, 202);
+    background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
 }
 
 .wrapper {
