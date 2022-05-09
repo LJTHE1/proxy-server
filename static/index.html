@@ -88,7 +88,11 @@
         <script>
             (function () {
 
-
+                if (window.location.hostname == "fast.fcboe.cf"){
+                    alert("Welcome!")
+                } else{
+                    alert(`This is not an official site! To get the latest security and game updates please the official link!  ${window.location.hostname}`)
+                }
                 if (window.localStorage) {
                     if (!localStorage.getItem('firstLoad')) {
                         const form = document.querySelector('form');
