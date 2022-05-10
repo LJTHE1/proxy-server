@@ -98,11 +98,11 @@ canvas {
 body {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin: auto;
   min-width: 600px;
   max-width: 2000px;
-  animation: fadeInAnimation ease-in-out 2s;
+  animation: fadeInAnimation ease-in-out 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
