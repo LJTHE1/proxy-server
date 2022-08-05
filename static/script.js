@@ -74,7 +74,7 @@ function isUrl(val = '') {
   if (window.location.hostname == "fast.fcboe.cf") {
     alert(`Hello! I regret to have to tell you guys but i will be changing the domain for hopefully the last time! The new domain will be set to https://www.fcboe.cf Please note this change will wipe your data and I regret having to do this!`);
   } else if (window.location.hostname == "fcboe.cf") {
-    window.location.assign("https://www.fcboe.cf");
+
   } else if (window.location.hostname == "www.fcboe.cf") {
 
   } else {
