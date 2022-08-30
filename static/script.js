@@ -1,5 +1,8 @@
 // Some random colors
 const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+const backgroundcolor = ((localStorage.getItem("backgroundcolor")) ? (localStorage.getItem("backgroundcolor")) : `charcole`)
+
+
 
 const numBalls = 50;
 const balls = [];
@@ -20,6 +23,7 @@ for (let i = 0; i < numBalls; i++) {
 
 // Keyframes
 balls.forEach((el, i, ra) => {
+  document.body.style.background = backgroundcolor;
   let to = {
     x: Math.random() * (i % 2 === 0 ? -11 : 11),
     y: Math.random() * 12
@@ -108,3 +112,24 @@ function isUrl(val = '') {
     };
   };
 })();
+
+
+function show_prompt() {
+  var color = prompt('Please enter a hex code or color', '#3f4d63');
+  if (color != null && color != "") {
+    alert(color);
+    if (window.localStorage) {
+      if (!localStorage.getItem('backgroundcolor')) {
+        localStorage['backgroundcolor'] = color;
+        window.location.reload();
+      } else { 
+        localStorage.setItem("backgroundcolor", color);
+        window.location.reload();
+      }
+    }
+  }
+}
+
+function show_color() {
+  alert(localStorage.getItem("backgroundcolor"))
+}

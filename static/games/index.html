@@ -1,120 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <div title="Game Library (Beta)" class="desc">
+      <h1 style="color: white">Game Library (Beta)</h1>
+    </div>
+    <meta charset="UTF-8" />
+    <title>School Time Savers</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+    ></script>
 
-<head>
-  <div title="Game Library (Beta)" class="desc">
-    <h1 style="color:white;">Game Library (Beta)</h1>
-  </div>
-  <meta charset="UTF-8">
-  <title>School Time Savers</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3601190957121916"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3601190957121916"
-     crossorigin="anonymous"></script>
+  <style>
+    .game {
+      background-color: #95bd97;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 75%;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
 
-</head>
+    .desc {
+      display: flex;
+      justify-content: center;
+    }
 
+    .centertext {
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      /* margin is -0.5 * dimension */
+      margin-top: -25px;
+    }
+  </style>
 
-<style>
-  .game {
-    background-color: #95bd97;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 75%;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-  }
-
-  .desc {
-    display: flex;
-    justify-content: center;
-  }
-
-  .centertext {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    /* margin is -0.5 * dimension */
-    margin-top: -25px;
-  }
-</style>
-
-<body>
-  <!-- partial:index.partial.html -->
-  <link href='https://fonts.googleapis.com/css?family=Lato:10,400,700' rel='stylesheet' type='text/css'>
-  <div id='stars'></div>
-  <div id='stars2'></div>
-  <div id='stars3'></div>
-  <span>
-    <center>
-      
-      <a title="FNF" href="/service/hvtrs8%2F-wuw%2Cngwermuldq.aoo%2Froptcl-vkeu%2F572351" class="game">FNF</a>
-      <a title="New Grounds" href="/service/hvtrs8%2F-wuw%2Cngwermuldq.aoo%2F" class="game">New Grounds</a>
-      <a title="Dogeminer" href="/service/hvtrs8%2F-dmggmkngr%2Csg%2F" class="game">Dogeminer</a>
-      <a title="Doom" href="/games/g/doom-checkboxes/" class="game">Doom</a>
-      <a title="xx142-b2exe" href="/games/g/xx142-b2exe/" class="game">xx142-b2exe</a>
-      <a title="Under Run" href="/games/g/underrun/" class="game">Under Run</a>
-      <a title="Tower Master" href="/games/g/towermaster/" class="game">Tower Master</a>
-      <a title="Tetris" href="/games/g/tetris/" class="game">Tetris</a>
-      <a title="Space Company" href="/games/g/spacecompany/" class="game">Space Company</a>
-      <a title="Snake" href="/games/g/snake/" class="game">Snake</a>
-      <a title="Sleepingbeauty" href="/games/g/sleepingbeauty/" class="game">Sleeping Beauty</a>
-      <a title="Road Blocks" href="/games/g/roadblockcs/" class="game">Road Blocks</a>
-      <a title="Retro Haunt" href="/games/g/retrohaunt/" class="game">Retro Haunt</a>
-      <a title="Radius Raid" href="/games/g/radiusraid/" class="game">Radius Raid</a>
-      <a title="Racer" href="/games/g/racer/" class="game">Racer</a>
-      <a title="Pushback" href="/games/g/pushback/" class="game">Pushback</a>
-      <a title="Pond" href="/games/g/pond/" class="game">Pond</a>
-      <a title="Particle Clicker" href="/games/g/particle-clicker/" class="game">Particle Clicker</a>
-      <a title="Pacman" href="/games/g/pacman/" class="game">Pacman</a>
-      <a title="NS Shaft" href="/games/g/nsshaft/" class="game">NS Shaft</a>
-      <a title="mcjs" href="/games/g/mcjs/" class="game">MCJS</a>
-      <a title="Konnekt" href="/games/g/Konnekt/" class="game">Konnekt</a>
-      <a title="House Horror" href="/games/g/househorror/" class="game">House Horror</a>
-      <a title="House" href="/games/g/house/" class="game">House</a>
-      <a title="Hextris" href="/games/g/hextris/" class="game">Hextris</a>
-      <a title="Gopher Kart" href="/games/g/gopher/" class="game">Gopher Kart</a>
-      <a title="Geometry Dash" href="/games/g/geometrydash/" class="game">Geometry Dash</a>
-      <a title="Friendly Fire" href="/games/g/friendlyfire/" class="game">Friendly Fire</a>
-      <a title="Flappy Bird" href="/games/g/flappybird/" class="game">Flappy Bird</a>
-      <a title="Fire Water" href="/games/g/firewater/" class="game">Fire Water</a>
-      <a title="Evil Glitch" href="/games/g/evilglitch/" class="game">Evil Glitch</a>
-      <a title="Doodle Jump" href="/games/g/doodle-jump/" class="game">Doodle Jump</a>
-      <a title="Dino" href="/games/g/dino/" class="game">Dino</a>
-      <a title="Cube Field" href="/games/g/cubefield/" class="game">Cube Field</a>
-      <a title="Cookie Clicker" href="/games/g/cookieclicker/" class="game">Cookie Clicker</a>
-      <a title="Connect 3" href="/games/g/connect3/" class="game">Connect 3</a>
-      <a title="Chroma Incident" href="/games/g/chromaincident/" class="game">Chroma Incident</a>
-      <a title="Chess" href="/games/g/chess/" class="game">Chess</a>
-      <a title="Break out" href="/games/g/breakout/" class="game">Break Out</a>
-      <a title="Break Lock" href="/games/g/breaklock/" class="game">Break lock</a>
-      <a title="Bounce Back" href="/games/g/bounceback/" class="game">Bounce back</a>
-      <a title="Backcountry" href="/games/g/backcountry/" class="game">Back Country</a>
-      <a title="Astray" href="/games/g/astray/" class="game">Astray</a>
-      <a title="Asteroids" href="/games/g/asteroids/" class="game">Asteroids</a>
-      <a title="A Dark Room" href="/games/g/adarkroom/" class="game">A dark room</a>
-      <a title="HexGL" href="/games/g/HexGL/" class="game">HexGL</a>
-      <a title="2048" href="/games/g/2048/" class="game">2048</a>
-      <a title="SM64" href="/games/g/sm64/" class="game">SM64</a>
-      <a title="SM64" href="/games/g/sm64/" class="game">SM64</a>
-      <a title="OSU" href="/service/hvtrs8%2F-wuw%2Cwgbmsw.mnnile" class="game">OSU</a>
-      <a title="Emulator" href="/service/hvtrs8%2F-kmzoiincnm.eivhwb%2Cim%2Fue%60rgtpo-" class="game">Emulator</a>
-    </center>
-  </span>
-  <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-</body>
-
+  <body>
+    <!-- partial:index.partial.html -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:10,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <span>
+      <center>
+        <a
+          title="FNF"
+          href="/service/hvtrs8%2F-wuw%2Cngwermuldq.aoo%2Froptcl-vkeu%2F572351"
+          class="game"
+          >FNF</a
+        >
+        <a
+          title="New Grounds"
+          href="/service/hvtrs8%2F-wuw%2Cngwermuldq.aoo%2F"
+          class="game"
+          >New Grounds</a
+        >
+        <a
+          title="Dogeminer"
+          href="/service/hvtrs8%2F-dmggmkngr%2Csg%2F"
+          class="game"
+          >Dogeminer</a
+        >
+        <a title="Doom" href="/games/g/doom-checkboxes/" class="game">Doom</a>
+        <a title="xx142-b2exe" href="/games/g/xx142-b2exe/" class="game"
+          >xx142-b2exe</a
+        >
+        <a title="Under Run" href="/games/g/underrun/" class="game"
+          >Under Run</a
+        >
+        <a title="Tower Master" href="/games/g/towermaster/" class="game"
+          >Tower Master</a
+        >
+        <a title="Tetris" href="/games/g/tetris/" class="game">Tetris</a>
+        <a title="Space Company" href="/games/g/spacecompany/" class="game"
+          >Space Company</a
+        >
+        <a title="Snake" href="/games/g/snake/" class="game">Snake</a>
+        <a title="Sleepingbeauty" href="/games/g/sleepingbeauty/" class="game"
+          >Sleeping Beauty</a
+        >
+        <a title="Road Blocks" href="/games/g/roadblockcs/" class="game"
+          >Road Blocks</a
+        >
+        <a title="Retro Haunt" href="/games/g/retrohaunt/" class="game"
+          >Retro Haunt</a
+        >
+        <a title="Radius Raid" href="/games/g/radiusraid/" class="game"
+          >Radius Raid</a
+        >
+        <a title="Racer" href="/games/g/racer/" class="game">Racer</a>
+        <a title="Pushback" href="/games/g/pushback/" class="game">Pushback</a>
+        <a title="Pond" href="/games/g/pond/" class="game">Pond</a>
+        <a
+          title="Particle Clicker"
+          href="/games/g/particle-clicker/"
+          class="game"
+          >Particle Clicker</a
+        >
+        <a title="Pacman" href="/games/g/pacman/" class="game">Pacman</a>
+        <a title="NS Shaft" href="/games/g/nsshaft/" class="game">NS Shaft</a>
+        <a title="mcjs" href="/games/g/mcjs/" class="game">MCJS</a>
+        <a title="Konnekt" href="/games/g/Konnekt/" class="game">Konnekt</a>
+        <a title="House Horror" href="/games/g/househorror/" class="game"
+          >House Horror</a
+        >
+        <a title="House" href="/games/g/house/" class="game">House</a>
+        <a title="Hextris" href="/games/g/hextris/" class="game">Hextris</a>
+        <a title="Gopher Kart" href="/games/g/gopher/" class="game"
+          >Gopher Kart</a
+        >
+        <a title="Geometry Dash" href="/games/g/geometrydash/" class="game"
+          >Geometry Dash</a
+        >
+        <a title="Friendly Fire" href="/games/g/friendlyfire/" class="game"
+          >Friendly Fire</a
+        >
+        <a title="Flappy Bird" href="/games/g/flappybird/" class="game"
+          >Flappy Bird</a
+        >
+        <a title="Fire Water" href="/games/g/firewater/" class="game"
+          >Fire Water</a
+        >
+        <a title="Evil Glitch" href="/games/g/evilglitch/" class="game"
+          >Evil Glitch</a
+        >
+        <a title="Doodle Jump" href="/games/g/doodle-jump/" class="game"
+          >Doodle Jump</a
+        >
+        <a title="Dino" href="/games/g/dino/" class="game">Dino</a>
+        <a title="Cube Field" href="/games/g/cubefield/" class="game"
+          >Cube Field</a
+        >
+        <a title="Cookie Clicker" href="/games/g/cookieclicker/" class="game"
+          >Cookie Clicker</a
+        >
+        <a title="Connect 3" href="/games/g/connect3/" class="game"
+          >Connect 3</a
+        >
+        <a title="Chroma Incident" href="/games/g/chromaincident/" class="game"
+          >Chroma Incident</a
+        >
+        <a title="Chess" href="/games/g/chess/" class="game">Chess</a>
+        <a title="Break out" href="/games/g/breakout/" class="game"
+          >Break Out</a
+        >
+        <a title="Break Lock" href="/games/g/breaklock/" class="game"
+          >Break lock</a
+        >
+        <a title="Bounce Back" href="/games/g/bounceback/" class="game"
+          >Bounce back</a
+        >
+        <a title="Backcountry" href="/games/g/backcountry/" class="game"
+          >Back Country</a
+        >
+        <a title="Astray" href="/games/g/astray/" class="game">Astray</a>
+        <a title="Asteroids" href="/games/g/asteroids/" class="game"
+          >Asteroids</a
+        >
+        <a title="A Dark Room" href="/games/g/adarkroom/" class="game"
+          >A dark room</a
+        >
+        <a title="HexGL" href="/games/g/HexGL/" class="game">HexGL</a>
+        <a title="2048" href="/games/g/2048/" class="game">2048</a>
+        <a title="SM64" href="/games/g/sm64/" class="game">SM64</a>
+        <a
+          title="OSU"
+          href="/service/hvtrs8%2F-wuw%2Cwgbmsw.mnnile"
+          class="game"
+          >OSU</a
+        >
+        <a
+          title="Emulator"
+          href="/service/hvtrs8%2F-kmzoiincnm.eivhwb%2Cim%2Fue%60rgtpo-"
+          class="game"
+          >Emulator</a
+        >
+        <a title="Home" href="/" class="game">Home</a>
+      </center>
+    </span>
+    <!-- partial -->
+    <script src="./script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </body>
 </html>
